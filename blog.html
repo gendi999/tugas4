@@ -1,0 +1,152 @@
+<html>
+  <head>
+    <title>Creating Blog Page</title>
+    <link rel="stylesheet" href="assets/css/blog.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+      <div class="left-side">
+        <a href="index.html">
+          <img src="assets/images/boot.jpeg" alt="logo" style="width:30px;" />
+        </a>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="blog.html" class="list-active">My Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <a href="contact.html"> Contact Me </a>
+      </div>
+    </nav>
+
+    <!-- Blog -->
+    <!-- Form -->
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="getData(event)">
+            <h1>Create Post Blog</h1>
+            <div>
+              <label for="input-blog-title">Project Name</label>
+              <input id="input-blog-title" />
+            </div>
+            <div class="mb-4 grid grid-cols-2 gap-8">
+            <div>
+              <label for="input-blog-star">Star Date</label>
+              <input id="input-blog-star" type="date" />
+            </div>
+            <div>
+              <label for="input-blog-akhir">end Date</label>
+              <input id="input-blog-akhir" type="date" />
+            </div>
+            </div>
+            <div>
+              <label for="input-blog-content">Description</label>
+              <textarea  id="input-blog-content"></textarea>
+            </div>
+            <div>
+             <label for="input-teknologi">teknologi</label>
+            <div class="mb-4 grid grid-cols-2 gap-8">
+              <div>
+                <input type="checkbox" id="checkbox1" style="width: 30px;">
+                <label for="checkbox1">Node.js</label>
+            </div>
+              <div class="styled-checkbox">
+                <input type="checkbox" id="checkbox2" style="width: 30px;">
+                <label for="checkbox2">React.js</label>
+              </div>
+         
+            <div class="styled-checkbox">
+              <input type="checkbox" id="checkbox3" style="width: 30px;">
+              <label for="checkbox3">Next.js</label>
+            </div>
+            <div class="styled-checkbox">
+              <input type="checkbox" id="checkbox4" style="width: 30px;">
+              <label for="checkbox4">Apapun.js</label>
+            </div>
+            </div>
+            </div>
+
+            <div>
+              <label>Upload Image</label>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  <p>Attach File</p>
+                  <img src="assets/images/file.png" alt="file" />
+                </label>
+                <input type="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <div class="button-group">
+              <button>Post Blog</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <hr class="line" />
+      <div class="blog-list" id="contents">
+        <!-- dynamic content would be here -->
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="assets/images/boot.jpeg" alt="" />
+          </div>
+          <div class="blog-content">
+            <div class="btn-group">
+              <button class="btn-edit">Edit Post</button>
+              <button class="btn-post">Post Blog</button>
+            </div>
+            <!-- <div class="btn-group">
+              <button class="btn-edit">Edit Post</button>
+              <button class="btn-post">Post Blog</button>
+            </div> -->
+            <!-- <h1>
+              <a href="blog-detail.html" target="_blank"
+                >Pasar Coding di Indonesia Dinilai Masih Menjanjikan</a
+              >
+            </h1>
+            <div class="blog-date">
+<input id="star" type="date">
+            </div> 
+             <div class="detail-blog-content">
+              12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah
+            </div>
+            <p>
+              Ketimpangan sumber daya manusia (SDM) di sektor digital masih
+              menjadi isu yang belum terpecahkan. Berdasarkan penelitian
+              ManpowerGroup, ketimpangan SDM global, termasuk Indonesia,
+              meningkat dua kali lipat dalam satu dekade terakhir. Lorem ipsum,
+              dolor sit amet consectetur adipisicing elit. Quam, molestiae
+              numquam! Deleniti maiores expedita eaque deserunt quaerat! Dicta,
+              eligendi debitis?
+            </p>
+
+            <div class="blog-checkbox">
+
+
+            </div>
+            <div class="btn-group">
+              <button class="btn-edit">Edit Post</button>
+              <button class="btn-post">Post Blog</button>
+            </div>
+
+            <div style="float:right; margin: 10px">
+              <p style="font-size: 15px; color:grey">1 minutes ago</p>
+            </div>
+
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/blog.js"></script>

@@ -1,0 +1,73 @@
+* .container {
+    display: flex;
+    
+    
+  }
+  
+  .content-section {
+    width: 40%;
+    flex: 70%;
+    padding-top: 50px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    text-align: justify;
+    align-items: center;
+  }
+  #action-button-contact a {
+    text-decoration: none;
+  }
+  #contact-button {
+    margin-right: 20px;
+  }
+  #contact-button button {
+    border: none;
+    background: #0c0f13;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 20px;
+  }
+  #download-cv button {
+    border: none;
+    background: none;
+    font-weight: arial;
+    color: #0a0d10;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+  #download-cv button i {
+    margin-left: 5px;
+    color: #111316;
+  }
+
+  
+section {
+    display: flex;
+    width: 100%;
+}
+
+.left-content {
+    flex: 70%;
+}
+
+.right-content {
+    padding-top: 50px;
+    flex: 40%;
+    
+}
+
+.container-skill {
+    display: flex;
+    margin-top: 25px;
+}
+
+.container-sosmed{
+    margin-top: 25px;
+}
+
+.container-sosmed i {
+    font-size: 20px;
+    margin-right: 20px;
+}
